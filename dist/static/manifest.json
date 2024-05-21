@@ -1,0 +1,21 @@
+{
+  "name": "PWA WEATHER By Websylvain",
+  "short_name": "PWA WEATHER",
+  "icons": [
+    {
+      "src": "logo-min.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "logo-max.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "background_color": "#ed9017",
+  "theme_color": "#ed9017"
+}
