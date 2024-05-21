@@ -50,14 +50,15 @@ jobs:
         with:
           path: ./dist
 
-  # Deploy job
+  # Deployment job
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }} # Assuming you want to use the URL as an output
-    runs-on: ubuntu-latest
+      url: ${{ steps.deployment.outputs.page_url }}
     needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
