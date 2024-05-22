@@ -5,8 +5,8 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex);
 
-const OWMKEY = 'a9d7a05fe78144cb7f7113e1416e7886';
-const FLICKRKEY = '385faf93e749d1b36c63a91d1245a3f2';
+const OWMKEY = process.env.OWM_KEY;
+const FLICKRKEY = process.env.FLICK_KEY;
 
 export default new Vuex.Store({
     state:{
